@@ -1,0 +1,97 @@
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+
+public class Button extends JButton implements ActionListener{
+	
+	JButton[] button = new JButton[10];
+	
+	Button(){
+		button[3].setSize(new Dimension(50,50));
+		button[3].setText("4");
+		button[3].setFocusable(false);
+		
+
+		button[4].setSize(new Dimension(50,50));
+		button[4].setText("5");
+		button[4].setFocusable(false);
+		
+
+		button[5].setSize(new Dimension(50,50));
+		button[5].setText("6");
+		button[5].setFocusable(false);
+		
+		button[6].setSize(new Dimension(50,50));
+		button[6].setText("7");
+		button[6].setFocusable(false);
+		
+		button[7].setSize(new Dimension(50,50));
+		button[7].setText("8");
+		button[7].setFocusable(false);
+		
+		button[8].setSize(new Dimension(50,50));
+		button[8].setText("9");
+		button[8].setFocusable(false);
+		
+		button[9].setSize(new Dimension(50,50));
+		button[9].setText("0");
+		button[9].setFocusable(false);
+	}
+	
+	void button1() {
+		button[0].setSize(new Dimension(50,50));
+		button[0].setText("1");
+		button[0].setFocusable(false);
+	}
+	
+	void button2() {
+		button[1].setSize(new Dimension(50,50));
+		button[1].setText("2");
+		button[1].setFocusable(false);
+	}
+	
+	void button3() {
+		button[3].setSize(new Dimension(50,50));
+		button[3].setText("4");
+		button[3].setFocusable(false);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		if (e.getSource()==button[0]) {
+			
+		}
+		else if (e.getSource()==button[1]) {
+			
+		}
+		else if (e.getSource()==button[2]) {
+			
+		}
+		else if (e.getSource()==button[3]) {
+			
+		}
+		else if (e.getSource()==button[4]) {
+			
+		}
+		else if (e.getSource()==button[5]) {
+			
+		}
+		else if (e.getSource()==button[6]) {
+			
+		}
+		else if (e.getSource()==button[7]) {
+			
+		}
+		else if (e.getSource()==button[8]) {
+			
+		}
+		else if (e.getSource()==button[9]) {
+			
+		}
+		
+	}
+
+}

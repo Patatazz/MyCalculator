@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<item key="replaceBarOpen" value="true"/>
+	<list key="replacehistory">
+		<item value="displayPanel"/>
+		<item value="textDisplay"/>
+		<item value="black"/>
+		<item value="Equals"/>
+		<item value="Div"/>
+		<item value="Sub"/>
+		<item value="0"/>
+		<item value="9"/>
+		<item value="8"/>
+		<item value="7"/>
+		<item value="6"/>
+		<item value="this"/>
+	</list>
+	<list key="searchhistory">
+		<item value="textDisplay"/>
+		<item value="textField"/>
+		<item value="red"/>
+		<item value="Add"/>
+		<item value="7"/>
+		<item value="1"/>
+		<item value="calcuFrame"/>
+	</list>
+</section>

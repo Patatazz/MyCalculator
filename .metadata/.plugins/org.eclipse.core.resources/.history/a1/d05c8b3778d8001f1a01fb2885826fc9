@@ -1,0 +1,20 @@
+import javax.swing.JPanel;
+
+public class Panels extends JPanel{
+	
+	JPanel topPanel;
+	JPanel midPanel;
+	JPanel bottomPanel;
+	
+	// constructor
+	Panels(){
+		
+		topPanel = new JPanel();
+		midPanel = new JPanel();
+		bottomPanel = new JPanel();
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+import java.awt.Dimension;
+import java.awt.GridLayout;
+
+import javax.swing.JPanel;
+
+public class Panels extends JPanel{
+	
+	JPanel topPanel;
+	JPanel midPanel;
+	JPanel bottomPanel;
+	
+	// constructor
+	Panels(){
+		
+		topPanel = new JPanel();
+		midPanel = new JPanel();
+		bottomPanel = new JPanel();
+		
+		topPanel.setSize(new Dimension(300,100));
+		topPanel.setLayout(new GridLayout());
+		
+		midPanel.setSize(new Dimension(300, 300));
+		
+		
+		bottomPanel.setSize(new Dimension(300, 100));
+		
+		
+		
+	}
+	
+	void topPanel() {
+		
+		
+	}
+
+}

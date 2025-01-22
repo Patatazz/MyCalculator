@@ -1,0 +1,12 @@
+
+
+public class Panels extends JPanels{
+	
+	JPanels topPanel = new JPanels();
+	
+	Panels(){
+		
+		
+	}
+
+}
