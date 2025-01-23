@@ -1,0 +1,67 @@
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+
+public class LastButtonPressed  {
+	
+    private JButton lastButton = null;
+    private JButton previousButton = null;
+    private JTextField lastButtonsText = new JTextField(10);
+    private JTextField previousButtonsText = new JTextField(10);
+    private JPanel mainPanel = new JPanel(new BorderLayout());
+    
+    public LastButtonPressed() {
+        int sides = 8;
+        JPanel buttonGridPanel = new JPanel(new GridLayout(sides, sides));
+        ActionListener listener = e -> {
+            previousButton = lastButton;
+            lastButton = (JButton) e.getSource();
+            previousButtonsText.setText(lastButtonsText.getText());
+            lastButtonsText.setText(e.getActionCommand());
+        };
+        for (int i = 0; i < sides * sides; i++) {
+            String text = "Button " + (i + 1);
+            JButton button = new JButton(text);
+            button.addActionListener(listener);
+            buttonGridPanel.add(button);
+        }
+        
+        JPanel topPanel = new JPanel();
+        topPanel.add(new JLabel("Previous Button:"));
+        topPanel.add(previousButtonsText);
+        topPanel.add(Box.createHorizontalStrut(20));
+        topPanel.add(new JLabel("Last Button:"));
+        topPanel.add(lastButtonsText);
+        
+        
+        mainPanel.add(topPanel, BorderLayout.PAGE_START);
+        mainPanel.add(buttonGridPanel);
+    }
+    
+    public JPanel getMainPanel() {
+        return mainPanel;
+    }
+    
+    
+    public JButton getLastButton() {
+        return lastButton;
+    }
+
+    public JButton getPreviousButton() {
+        return previousButton;
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("Last Button Pressed");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.add(new LastButtonPressed().getMainPanel());
+            frame.pack();
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
+            
+        });
+    }
+    
+}

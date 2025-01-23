@@ -1,0 +1,22 @@
+import javax.swing.JFrame;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		JFrame frame = new JFrame();
+		CalcuButton button1 = new CalcuButton();
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		frame.setSize(500,500);
+		frame.setLayout(null);
+		
+		frame.add(button1.getButton());
+		
+		
+
+	}
+
+}

@@ -1,0 +1,26 @@
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
+public class CalcuButton {
+	
+	CalcuButton(){
+		
+		
+	}
+	// Test 
+//	 private JButton lastButton = null;
+//	 private JButton previousButton = null;
+//     private JTextField lastButtonsText = new JTextField();
+//     private JTextField previousButtonsText = new JTextField();
+//	
+//	ActionListener listener = e -> {
+//        previousButton = lastButton;
+//        lastButton = (JButton) e.getSource();
+//        previousButtonsText.setText(lastButtonsText.getText());
+//        lastButtonsText.setText(e.getActionCommand());
+//    };
+
+
+}

@@ -1,0 +1,37 @@
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
+public class CalcuButton {
+	
+	JButton button;
+	
+	CalcuButton(){
+		
+		button = new JButton();
+		button.setForeground(Color.pink);
+		button.setBackground(Color.black);
+		button.setFocusable(false);
+		button.setFont(new Font("Monospaced",Font.PLAIN ,30));
+	}
+	
+	void getButton() {
+	}
+	// Test 
+//	 private JButton lastButton = null;
+//	 private JButton previousButton = null;
+//     private JTextField lastButtonsText = new JTextField();
+//     private JTextField previousButtonsText = new JTextField();
+//	
+//	ActionListener listener = e -> {
+//        previousButton = lastButton;
+//        lastButton = (JButton) e.getSource();
+//        previousButtonsText.setText(lastButtonsText.getText());
+//        lastButtonsText.setText(e.getActionCommand());
+//    };
+
+
+}

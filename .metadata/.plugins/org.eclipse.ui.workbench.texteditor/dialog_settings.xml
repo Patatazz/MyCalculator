@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="true"/>
 	<list key="replacehistory">
+		<item value="private"/>
 		<item value="displayPanel"/>
 		<item value="textDisplay"/>
 		<item value="black"/>
@@ -17,6 +18,7 @@
 		<item value="this"/>
 	</list>
 	<list key="searchhistory">
+		<item value="static"/>
 		<item value="textDisplay"/>
 		<item value="textField"/>
 		<item value="red"/>

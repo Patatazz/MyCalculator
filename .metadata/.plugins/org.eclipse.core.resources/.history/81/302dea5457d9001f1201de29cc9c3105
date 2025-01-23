@@ -1,0 +1,28 @@
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		JFrame frame = new JFrame();
+		CalcuButton[] button = new CalcuButton[10];
+		
+		for (int i = 0; i < 17 ; i++) {
+			button[i] = new CalcuButton();
+		}
+		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		frame.setSize(500,500);
+		frame.setLayout(new FlowLayout());
+		
+//		
+		
+//		CalculatorUI test = new CalculatorUI();
+		
+
+	}
+
+}
