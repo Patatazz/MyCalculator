@@ -41,7 +41,7 @@ public class CalculatorUI extends JFrame implements ActionListener{
 //	JButton buttonDecimal;
 //	JButton buttonErase;
 	
-	CalcuButton button = new CalcuButton();
+	CalcuButton button1 = new CalcuButton();
 	
 	JLabel textDisplay;
 	JLabel catLabel;
@@ -88,7 +88,7 @@ public class CalculatorUI extends JFrame implements ActionListener{
 		midPanel.setBackground(Color.PINK);
 		midPanel.setLayout(new GridLayout(4,4,3,3));
 		
-		midPanel.add(button.getButton(1));
+		midPanel.add(test.getButton(4));
 		
 //		buttonAdd = new JButton("+");
 //		buttonAdd.setForeground(Color.pink);
