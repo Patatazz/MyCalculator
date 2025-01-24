@@ -22,7 +22,6 @@ public class CalcuButton implements ActionListener{
 			button[i].setBackground(Color.black);
 			button[i].setFocusable(false);
 			button[i].setFont(new Font("Monospaced",Font.BOLD ,20));
-			button[i].addActionListener(this);
 		}
 	}
 	

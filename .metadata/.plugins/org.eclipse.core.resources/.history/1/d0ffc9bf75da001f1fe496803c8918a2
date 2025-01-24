@@ -59,6 +59,7 @@ public class CalculatorUI extends JFrame{
 		
 		displayPanel.add(textDisplay, BorderLayout.EAST);
 		
+		
 		topPanel.add(catLabel);
 		topPanel.add(displayPanel);
 		
@@ -79,6 +80,7 @@ public class CalculatorUI extends JFrame{
 		patata.setText("PATATAS");
 		patata.setFont(new Font("Monospaced", Font.BOLD, 50));
 		patata.setForeground(Color.PINK);
+		
 		
 		bottomPanel = new JPanel();
 		bottomPanel.setPreferredSize(new Dimension(500,80));

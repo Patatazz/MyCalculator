@@ -1,11 +1,8 @@
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 
-public class CalcuButton implements ActionListener{
+public class CalcuButton {
 	
 	// Button creation optimization
 	JButton[] button = new JButton[20];
@@ -21,8 +18,7 @@ public class CalcuButton implements ActionListener{
 			button[i].setForeground(Color.pink);
 			button[i].setBackground(Color.black);
 			button[i].setFocusable(false);
-			button[i].setFont(new Font("Monospaced",Font.BOLD ,20));
-			button[i].addActionListener(this);
+			button[i].setFont(new Font("Monospaced",Font.PLAIN ,20));
 		}
 	}
 	
@@ -34,14 +30,6 @@ public class CalcuButton implements ActionListener{
 	public int buttonCounter() {
 		
 		return counter;
-	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-			if (e.getSource()==button[0]) {
-				System.out.println("Test");
-		}
-		
 	}
 	
 	

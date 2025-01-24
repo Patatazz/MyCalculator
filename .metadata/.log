@@ -358,3 +358,248 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2025-01-25 00:24:56.485 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=23.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_PH
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-25 00:25:19.734
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-01-25 00:37:05.668
+!MESSAGE Logback config file: C:\Users\Jerald\Desktop\MyCalculator\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-01-25 00:37:12.211
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Jerald'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:39:23.015
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:39:34.567
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:39:49.905
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:39:54.448
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:39:55.576
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:39:56.506
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:01.353
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:03.612
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:04.461
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:09.953
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:11.270
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:13.423
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:15.805
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:20.981
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:22.686
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:30.130
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:31.454
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:40:59.110
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:41:29.046
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:41:48.573
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:42:31.726
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:42:44.008
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:42:49.191
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:42:54.033
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:42:54.598
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:42:55.763
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:43:06.481
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:43:08.965
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:44:08.059
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:45:15.234
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:45:18.585
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:45:31.727
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:45:32.940
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:46:07.968
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:46:20.065
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:46:21.987
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:46:47.111
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:47:13.976
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:47:17.931
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:49:26.496
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:49:37.694
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:49:42.586
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:49:50.178
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:49:53.322
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:50:02.913
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:50:26.568
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:50:30.767
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:51:24.561
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:51:36.359
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:51:41.101
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:51:54.803
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:51:56.036
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:52:57.787
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:53:01.098
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:53:01.971
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:53:17.835
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:53:21.319
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:55:05.410
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:55:11.844
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:55:24.326
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:56:32.949
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:56:37.822
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:56:39.223
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:56:40.471
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:56:49.842
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:57:04.827
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:57:10.064
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:57:34.406
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:57:43.286
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 00:58:07.604
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 01:06:07.954
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 01:06:08.708
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 01:06:09.498
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 01:06:10.760
+!MESSAGE Unknown Error
+
+!ENTRY fr.kazejiyu.discord.rpc.integration 1 0 2025-01-25 01:09:04.416
+!MESSAGE Unknown Error
