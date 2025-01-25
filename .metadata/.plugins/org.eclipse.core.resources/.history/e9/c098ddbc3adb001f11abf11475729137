@@ -1,0 +1,14 @@
+
+public class Computation {
+	
+	int value1, value2;
+	
+	Computation(){
+		
+	}
+	
+	public int add(int fValue, int sValue) {
+		this.value1 = fValue;
+		this.value2 = sValue;
+	}
+}

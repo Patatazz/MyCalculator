@@ -1,0 +1,13 @@
+
+public class Computation {
+	
+	int value1, value2;
+	
+	Computation(){
+		
+	}
+	
+	public int add() {
+		
+	}
+}

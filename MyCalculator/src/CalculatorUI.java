@@ -4,22 +4,34 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Scanner;
+
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
-public class CalculatorUI extends JFrame{
-
-	JPanel topPanel;
-	JPanel midPanel;
-	JPanel bottomPanel;
-	JPanel extraPanel;
-	JPanel displayPanel;	
+public class CalculatorUI extends JFrame implements ActionListener{
 	
-	CalcuButton buttons = new CalcuButton();
+	double v1 = 0, v2 = 0 , total = 0;
+	char operator;
 	
-	JLabel textDisplay;
+	NumButton buttons = new NumButton();
+	JButton[] functionButtons = new JButton[9];
+	JButton addButton, subButton,mulButton;
+	JButton decButton, equButton, clrButton;
+	
+	MainPanel topPanel = new MainPanel();
+	MainPanel midPanel = new MainPanel();
+	MainPanel botPanel = new MainPanel();
+	
+	DisplayPanel topTextDisplay = new DisplayPanel();
+	
+	TextLabel textLabel = new TextLabel();
+	TextLabel patata = new TextLabel();
+	
 	JLabel catLabel;
 	
 	ImageIcon catIcon = new ImageIcon("images.jpg");
@@ -32,65 +44,159 @@ public class CalculatorUI extends JFrame{
 		this.setTitle("Simple Calculator");
 		this.setLayout(new FlowLayout());
 		this.setIconImage(catIcon.getImage());
+		this.getContentPane().setBackground(Color.LIGHT_GRAY);
 		
-		topPanel = new JPanel();
 		topPanel.setPreferredSize(new Dimension(500,80));
-		topPanel.setBackground(Color.PINK);
 		topPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+		
+		midPanel.setPreferredSize(new Dimension(500,295));
+		
+		botPanel.setPreferredSize(new Dimension(500,80));
+		botPanel.setBackground(Color.BLACK);
 		
 		catLabel = new JLabel();
 		catLabel.setIcon(catIcon2);
-
-		displayPanel = new JPanel();
-		displayPanel.setPreferredSize(new Dimension(350,70));
-		displayPanel.setForeground(new Color(0x1B03A3));
-		displayPanel.setBackground(Color.BLACK);
-		displayPanel.setLayout(new BorderLayout());
 		
-		textDisplay = new JLabel();
-		textDisplay.setFont(new Font("Monospaced",Font.BOLD, 30));
-		textDisplay.setForeground(Color.pink);
-		textDisplay.setBackground(Color.blue);
-		
-		displayPanel.add(textDisplay, BorderLayout.EAST);
-		
+		topTextDisplay.add(textLabel, BorderLayout.EAST);
 		topPanel.add(catLabel);
-		topPanel.add(displayPanel);
+		topPanel.add(topTextDisplay);
 		
-		
-		midPanel = new JPanel();
-		midPanel.setPreferredSize(new Dimension(500,295));
-		midPanel.setBackground(Color.PINK);
-		midPanel.setLayout(new GridLayout(4,4,3,3));
-		
-		int buttonNum = buttons.buttonCounter();
-		
-		for (int i = 0; i < buttonNum ; i++) {
-			midPanel.add(buttons.getButton(i));
+		for (int i = 0; i < 10 ; i++) {
+			buttons.getButton(i).addActionListener(this);
 		}
 		
+		addButton = new JButton("+");
+		subButton = new JButton("-");
+		mulButton = new JButton("*");
+		decButton = new JButton(".");
+		equButton = new JButton("=");
+		clrButton = new JButton("Clear");
 		
-		JLabel patata = new JLabel();
+		functionButtons[0] = addButton;
+		functionButtons[1] = subButton;
+		functionButtons[2] = mulButton;
+		functionButtons[3] = decButton;
+		functionButtons[4] = equButton;
+		functionButtons[5] = clrButton;
+		
+		for(int i =0; i < 6; i++) {
+			functionButtons[i].addActionListener(this);
+			functionButtons[i].setFont(new Font("Monospaced",Font.BOLD ,20));
+			functionButtons[i].setFocusable(false);
+			functionButtons[i].setForeground(Color.pink);
+			functionButtons[i].setBackground(Color.black);
+		}
+			
+		midPanel.setLayout(new GridLayout(4,4,3,3));
+		midPanel.add(buttons.getButton(1));
+		midPanel.add(buttons.getButton(2));
+		midPanel.add(buttons.getButton(3));
+		midPanel.add(addButton);
+		midPanel.add(buttons.getButton(4));
+		midPanel.add(buttons.getButton(5));
+		midPanel.add(buttons.getButton(6));
+		midPanel.add(subButton);
+		midPanel.add(buttons.getButton(7));
+		midPanel.add(buttons.getButton(8));
+		midPanel.add(buttons.getButton(9));
+		midPanel.add(mulButton);
+		midPanel.add(decButton);
+		midPanel.add(buttons.getButton(0));
+		midPanel.add(clrButton);
+		midPanel.add(equButton);
+
 		patata.setText("PATATAS");
 		patata.setFont(new Font("Monospaced", Font.BOLD, 50));
 		patata.setForeground(Color.PINK);
-		
-		bottomPanel = new JPanel();
-		bottomPanel.setPreferredSize(new Dimension(500,80));
-		bottomPanel.setBackground(Color.BLACK);
-		bottomPanel.add(patata);
+		botPanel.add(patata);
 		
 		this.setResizable(false);
-		this.add(topPanel);
-		this.add(midPanel);
-		this.add(bottomPanel);
+		this.add(topPanel.getPanel());
+		this.add(midPanel.getPanel());
+		this.add(botPanel.getPanel());
 		this.setVisible(true);
-
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		for (int ctr = 0 ; ctr < 10 ; ctr++) {
+			if(e.getSource() == buttons.getButton(ctr)) {
+				textLabel.setText(textLabel.getText().concat(String.valueOf(ctr)));
+			}
+		}	
+		if(e.getSource()==decButton) {
+			textLabel.setText(textLabel.getText().concat("."));
+		}
+		if(e.getSource()==addButton) {
+			v1 = Double.parseDouble(textLabel.getText());
+			operator ='+';
+			textLabel.setText("");
+		}
+		if(e.getSource()==subButton) {
+			v1 = Double.parseDouble(textLabel.getText());
+			operator ='-';
+			textLabel.setText("");
+		}
+		if(e.getSource()==mulButton) {
+			v1 = Double.parseDouble(textLabel.getText());
+			operator ='*';
+			textLabel.setText("");
+		}
+		if(e.getSource()==clrButton) {
+			textLabel.setText("");
+		}
+		if(e.getSource()==equButton) {
+			v2=Double.parseDouble(textLabel.getText());
+			
+			switch(operator) {
+			case'+':
+				total=v1+v2;
+				break;
+			case'-':
+				total=v1-v2;
+				break;
+			case'*':
+				total=v1*v2;
+				break;
+			case'/':
+				total=v1/v2;
+				break;
+			}
+			textLabel.setText(String.valueOf(total));
+			v1=total;
+		}
 	}
 }
 
 
 // Previous Codes
+
+//topPanel = new JPanel();
+//topPanel.setPreferredSize(new Dimension(500,80));
+//topPanel.setBackground(Color.PINK);
+//topPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+
+//displayPanel = new JPanel();
+//displayPanel.setPreferredSize(new Dimension(350,70));
+//displayPanel.setForeground(new Color(0x1B03A3));
+//displayPanel.setBackground(Color.BLACK);
+//displayPanel.setLayout(new BorderLayout());
+
+//textDisplay = new JLabel();
+//textDisplay.setFont(new Font("Monospaced",Font.BOLD, 30));
+//textDisplay.setForeground(Color.pink);
+//textDisplay.setBackground(Color.blue);
+
+//displayPanel.add(textDisplay, BorderLayout.EAST);
+
+//topPanel.add(catLabel);
+//topPanel.add(displayPanel);
+
+
+//midPanel = new JPanel();
+//midPanel.setPreferredSize(new Dimension(500,295));
+//midPanel.setBackground(Color.PINK);
+//midPanel.setLayout(new GridLayout(4,4,3,3));
 
 //JButton button0;
 //JButton button1;
@@ -237,6 +343,11 @@ public class CalculatorUI extends JFrame{
 //midPanel.add(button0);
 //midPanel.add(buttonErase);
 //midPanel.add(buttonEquals);
+
+//bottomPanel = new JPanel();
+//bottomPanel.setPreferredSize(new Dimension(500,80));
+//bottomPanel.setBackground(Color.BLACK);
+//bottomPanel.add(patata);
 
 //@Override
 //public void actionPerformed(ActionEvent e) {

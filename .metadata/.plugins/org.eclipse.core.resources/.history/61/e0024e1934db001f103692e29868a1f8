@@ -1,0 +1,31 @@
+import java.awt.Color;
+import java.awt.Font;
+
+import javax.swing.JLabel;
+
+public class TextLabel extends JLabel{
+	
+	static String textDisplay;
+	
+	TextLabel(){
+		this.setText(textDisplay);
+		this.setFont(new Font("Monospaced",Font.BOLD, 30));
+		this.setForeground(Color.pink);
+		this.setBackground(Color.blue);
+	}
+	
+	public JLabel getTextLabel() {
+		return this;
+	}
+	
+	public void setTextLabel(String display) {
+		this.textDisplay = display;
+	}
+	public static void main(String[] args) {
+		
+		System.out.println(textDisplay);
+		
+		
+
+	}
+}
